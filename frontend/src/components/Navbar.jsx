@@ -15,11 +15,11 @@ export default function Navbar({ activeTab, setActiveTab, viewMode, setViewMode,
             <div className="flex items-center gap-2">
               <span className="font-extrabold text-xl tracking-tight text-neutral-900">SkillProof</span>
               <span className="bg-[#d4ff3a] text-neutral-900 text-[10px] font-bold px-2 py-0.5 rounded-full border border-neutral-800 tracking-wider">
-                v2.4 EVIDENCE
+                ✓ VERIFIED SKILLS
               </span>
               <span className={`inline-flex items-center gap-1.5 text-[10px] font-bold px-2 py-0.5 rounded-full ${backendOnline ? 'bg-emerald-100 text-emerald-800 border border-emerald-300' : 'bg-neutral-200 text-neutral-600 border border-neutral-300'}`}>
                 <span className={`w-1.5 h-1.5 rounded-full ${backendOnline ? 'bg-emerald-500 animate-pulse' : 'bg-neutral-400'}`}></span>
-                {backendOnline ? 'API 8000 Online' : 'API Connecting'}
+                {backendOnline ? 'LIVE ASSESSMENT' : 'LIVE ASSESSMENT'}
               </span>
             </div>
             <p className="text-[11px] text-neutral-500 font-medium hidden sm:block">Code-Verified Engineering Intelligence</p>
@@ -31,8 +31,8 @@ export default function Navbar({ activeTab, setActiveTab, viewMode, setViewMode,
           <button
             onClick={() => setActiveTab('explore')}
             className={`px-4 py-2 rounded-full text-xs font-semibold transition-all ${activeTab === 'explore'
-                ? 'bg-neutral-900 text-white shadow-sm'
-                : 'text-neutral-600 hover:text-black hover:bg-neutral-100'
+              ? 'bg-neutral-900 text-white shadow-sm'
+              : 'text-neutral-600 hover:text-black hover:bg-neutral-100'
               }`}
           >
             Proof Overview
@@ -40,8 +40,8 @@ export default function Navbar({ activeTab, setActiveTab, viewMode, setViewMode,
           <button
             onClick={() => setActiveTab('verify')}
             className={`px-4 py-2 rounded-full text-xs font-semibold transition-all flex items-center gap-1.5 ${activeTab === 'verify'
-                ? 'bg-neutral-900 text-white shadow-sm'
-                : 'text-neutral-600 hover:text-black hover:bg-neutral-100'
+              ? 'bg-neutral-900 text-white shadow-sm'
+              : 'text-neutral-600 hover:text-black hover:bg-neutral-100'
               }`}
           >
             <Sparkles className="w-3.5 h-3.5 text-[#d4ff3a]" />
@@ -50,8 +50,8 @@ export default function Navbar({ activeTab, setActiveTab, viewMode, setViewMode,
           <button
             onClick={() => setActiveTab('matrix')}
             className={`px-4 py-2 rounded-full text-xs font-semibold transition-all ${activeTab === 'matrix'
-                ? 'bg-neutral-900 text-white shadow-sm'
-                : 'text-neutral-600 hover:text-black hover:bg-neutral-100'
+              ? 'bg-neutral-900 text-white shadow-sm'
+              : 'text-neutral-600 hover:text-black hover:bg-neutral-100'
               }`}
           >
             Evidence Matrix
@@ -59,8 +59,8 @@ export default function Navbar({ activeTab, setActiveTab, viewMode, setViewMode,
           <button
             onClick={() => setActiveTab('matcher')}
             className={`px-4 py-2 rounded-full text-xs font-semibold transition-all flex items-center gap-1.5 ${activeTab === 'matcher'
-                ? 'bg-neutral-900 text-white shadow-sm'
-                : 'text-neutral-600 hover:text-black hover:bg-neutral-100'
+              ? 'bg-neutral-900 text-white shadow-sm'
+              : 'text-neutral-600 hover:text-black hover:bg-neutral-100'
               }`}
           >
             <Briefcase className="w-3.5 h-3.5" />
@@ -69,8 +69,8 @@ export default function Navbar({ activeTab, setActiveTab, viewMode, setViewMode,
           <button
             onClick={() => setActiveTab('microtasks')}
             className={`px-4 py-2 rounded-full text-xs font-semibold transition-all flex items-center gap-1.5 ${activeTab === 'microtasks'
-                ? 'bg-neutral-900 text-white shadow-sm'
-                : 'text-neutral-600 hover:text-black hover:bg-neutral-100'
+              ? 'bg-neutral-900 text-white shadow-sm'
+              : 'text-neutral-600 hover:text-black hover:bg-neutral-100'
               }`}
           >
             <Award className="w-3.5 h-3.5 text-[#b8e61e]" />

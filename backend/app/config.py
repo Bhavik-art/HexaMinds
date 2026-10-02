@@ -16,6 +16,7 @@ class Settings(BaseSettings):
 
     # CORS
     cors_origins: str = "http://localhost:5173,http://localhost:3000"
+    frontend_url: str = ""
 
     # Evidence Engine Thresholds
     evidence_proven_threshold: int = 80
@@ -28,7 +29,12 @@ class Settings(BaseSettings):
 
     @property
     def cors_origins_list(self) -> List[str]:
-        return [o.strip() for o in self.cors_origins.split(",")]
+        origins = [*self.cors_origins.split(","), self.frontend_url]
+        return list(dict.fromkeys(
+            origin.strip().rstrip("/")
+            for origin in origins
+            if origin.strip()
+        ))
 
     class Config:
         env_file = ".env"

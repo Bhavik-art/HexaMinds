@@ -214,6 +214,7 @@ cd HexaMinds
    SUPABASE_KEY=your_supabase_anon_or_service_key
    GITHUB_TOKEN=ghp_your_optional_github_token_here
    CORS_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
+   FRONTEND_URL=
    ```
 
 5. **Initialize Supabase Database Schema**:
@@ -253,6 +254,15 @@ cd HexaMinds
    npm run dev
    ```
    Open your browser to: **http://localhost:5173**
+
+### Production deployment environment
+
+Set these variables in the hosting providers' environment-variable settings, then redeploy:
+
+- **Render (backend):** Set `FRONTEND_URL` to the deployed Vercel origin, for example `https://your-frontend.vercel.app`. The backend adds it to the CORS allow-list alongside `CORS_ORIGINS`.
+- **Vercel (frontend):** Set `VITE_API_URL` to the deployed Render backend URL, for example `https://your-backend.onrender.com`.
+
+Use the origin only for `FRONTEND_URL` (no path); `CORS_ORIGINS` can still include local development origins. The frontend variable is read by `frontend/src/api.js`.
 
 ---
 

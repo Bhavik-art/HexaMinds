@@ -47,6 +47,7 @@ cp .env.example .env
 #   SUPABASE_URL
 #   SUPABASE_KEY
 #   GITHUB_TOKEN  (optional but recommended to avoid rate limits)
+#   FRONTEND_URL  (deployed frontend origin for CORS, optional locally)
 ```
 
 ### 4. Set up Supabase schema

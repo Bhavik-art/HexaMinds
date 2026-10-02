@@ -1,87 +1,86 @@
 import React from 'react';
-import { ShieldCheck, Sparkles, Activity } from 'lucide-react';
-import GithubIcon from './GithubIcon';
+import { ShieldCheck, ArrowUpRight, Sparkles, Terminal, Briefcase, Award } from 'lucide-react';
 
-export default function Navbar({ backendStatus, activeTab, setActiveTab }) {
-  const tabs = [
-    { id: 'resume', label: '1. Resume' },
-    { id: 'github', label: '2. GitHub Evidence' },
-    { id: 'dashboard', label: '3. Skill Proofs' },
-    { id: 'matcher', label: '4. Job Match' },
-    { id: 'tasks', label: '5. Micro-Tasks' },
-  ];
-
+export default function Navbar({ activeTab, setActiveTab, viewMode, setViewMode, onOpenAudit, backendOnline }) {
   return (
-    <header className="sticky top-0 z-50 glass-panel border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        {/* Brand */}
-        <div className="flex items-center space-x-3 cursor-pointer" onClick={() => setActiveTab('resume')}>
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-indigo-500/25">
-            <ShieldCheck className="w-6 h-6 text-white" />
+    <header className="sticky top-0 z-50 backdrop-blur-md bg-[#f7f7f5]/85 border-b border-black/5 transition-all">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+        {/* Brand Logo */}
+        <div className="flex items-center gap-3 cursor-pointer" onClick={() => setActiveTab('explore')}>
+          <div className="w-10 h-10 rounded-2xl bg-black text-[#d4ff3a] flex items-center justify-center font-black text-xl shadow-md border border-neutral-800">
+            SP
           </div>
           <div>
-            <div className="flex items-center space-x-2">
-              <span className="font-display font-extrabold text-xl tracking-tight text-white">
-                Skill<span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-300">Proof</span>
+            <div className="flex items-center gap-2">
+              <span className="font-extrabold text-xl tracking-tight text-neutral-900">SkillProof</span>
+              <span className="bg-[#d4ff3a] text-neutral-900 text-[10px] font-bold px-2 py-0.5 rounded-full border border-neutral-800 tracking-wider">
+                v2.4 EVIDENCE
               </span>
-              <span className="text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
-                MVP
+              <span className={`inline-flex items-center gap-1.5 text-[10px] font-bold px-2 py-0.5 rounded-full ${backendOnline ? 'bg-emerald-100 text-emerald-800 border border-emerald-300' : 'bg-neutral-200 text-neutral-600 border border-neutral-300'}`}>
+                <span className={`w-1.5 h-1.5 rounded-full ${backendOnline ? 'bg-emerald-500 animate-pulse' : 'bg-neutral-400'}`}></span>
+                {backendOnline ? 'API 8000 Online' : 'API Connecting'}
               </span>
             </div>
-            <p className="text-[11px] text-slate-400 font-medium hidden sm:block">Deterministic Evidence Engine</p>
+            <p className="text-[11px] text-neutral-500 font-medium hidden sm:block">Code-Verified Engineering Intelligence</p>
           </div>
         </div>
 
-        {/* Steps Navigation */}
-        <nav className="hidden md:flex items-center space-x-1 bg-slate-900/80 p-1.5 rounded-xl border border-white/5 shadow-inner">
-          {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all duration-200 ${
-                activeTab === tab.id
-                  ? 'bg-gradient-to-r from-indigo-600 to-indigo-500 text-white shadow-md shadow-indigo-600/30'
-                  : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+        {/* Center Navigation Pills */}
+        <nav className="hidden md:flex items-center bg-white/90 p-1.5 rounded-full border border-black/10 shadow-sm">
+          <button
+            onClick={() => setActiveTab('explore')}
+            className={`px-4 py-2 rounded-full text-xs font-semibold transition-all ${activeTab === 'explore'
+                ? 'bg-neutral-900 text-white shadow-sm'
+                : 'text-neutral-600 hover:text-black hover:bg-neutral-100'
               }`}
-            >
-              {tab.label}
-            </button>
-          ))}
+          >
+            Proof Overview
+          </button>
+          <button
+            onClick={() => setActiveTab('verify')}
+            className={`px-4 py-2 rounded-full text-xs font-semibold transition-all flex items-center gap-1.5 ${activeTab === 'verify'
+                ? 'bg-neutral-900 text-white shadow-sm'
+                : 'text-neutral-600 hover:text-black hover:bg-neutral-100'
+              }`}
+          >
+            <Sparkles className="w-3.5 h-3.5 text-[#d4ff3a]" />
+            Verify Résumé
+          </button>
+          <button
+            onClick={() => setActiveTab('matrix')}
+            className={`px-4 py-2 rounded-full text-xs font-semibold transition-all ${activeTab === 'matrix'
+                ? 'bg-neutral-900 text-white shadow-sm'
+                : 'text-neutral-600 hover:text-black hover:bg-neutral-100'
+              }`}
+          >
+            Evidence Matrix
+          </button>
+          <button
+            onClick={() => setActiveTab('matcher')}
+            className={`px-4 py-2 rounded-full text-xs font-semibold transition-all flex items-center gap-1.5 ${activeTab === 'matcher'
+                ? 'bg-neutral-900 text-white shadow-sm'
+                : 'text-neutral-600 hover:text-black hover:bg-neutral-100'
+              }`}
+          >
+            <Briefcase className="w-3.5 h-3.5" />
+            Job Matcher & Gaps
+          </button>
+          <button
+            onClick={() => setActiveTab('microtasks')}
+            className={`px-4 py-2 rounded-full text-xs font-semibold transition-all flex items-center gap-1.5 ${activeTab === 'microtasks'
+                ? 'bg-neutral-900 text-white shadow-sm'
+                : 'text-neutral-600 hover:text-black hover:bg-neutral-100'
+              }`}
+          >
+            <Award className="w-3.5 h-3.5 text-[#b8e61e]" />
+            Gap Closer
+          </button>
         </nav>
 
-        {/* Status & Links */}
-        <div className="flex items-center space-x-3">
-          <div
-            className={`flex items-center space-x-1.5 px-2.5 py-1 rounded-full text-xs font-medium border ${
-              backendStatus === 'online'
-                ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30'
-                : backendStatus === 'offline'
-                ? 'bg-rose-500/10 text-rose-400 border-rose-500/30'
-                : 'bg-amber-500/10 text-amber-400 border-amber-500/30'
-            }`}
-          >
-            <span
-              className={`w-2 h-2 rounded-full ${
-                backendStatus === 'online'
-                  ? 'bg-emerald-400 animate-pulse'
-                  : backendStatus === 'offline'
-                  ? 'bg-rose-400'
-                  : 'bg-amber-400 animate-ping'
-              }`}
-            />
-            <span className="capitalize">{backendStatus}</span>
-          </div>
+        {/* Right Action Buttons */}
 
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noreferrer"
-            className="p-2 text-slate-400 hover:text-white hover:bg-white/5 rounded-lg transition"
-            title="GitHub"
-          >
-            <GithubIcon className="w-5 h-5" />
-          </a>
-        </div>
+
       </div>
     </header>
   );

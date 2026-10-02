@@ -1,0 +1,624 @@
+{
+  "candidates": [
+    {
+      "id": "cand-alex-rivera",
+      "name": "Alex Rivera",
+      "email": "alex.rivera.dev@gmail.com",
+      "github_username": "alexrivera-dev",
+      "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80",
+      "title": "Full-Stack Systems Engineer",
+      "bio": "Building distributed backends and high-performance React web interfaces. Open-source contributor to async Python frameworks.",
+      "overall_proof_score": 84,
+      "proof_xp": 320,
+      "total_skills": 12,
+      "proven_count": 7,
+      "partial_count": 2,
+      "claimed_only_count": 3,
+      "github_stats": {
+        "public_repos": 28,
+        "total_stars": 142,
+        "followers": 89,
+        "account_created": "2021-03-12",
+        "recent_commits_30d": 64,
+        "top_languages": [
+          {
+            "name": "Python",
+            "count": 14
+          },
+          {
+            "name": "TypeScript",
+            "count": 8
+          },
+          {
+            "name": "SQL",
+            "count": 4
+          },
+          {
+            "name": "Shell",
+            "count": 2
+          }
+        ],
+        "total_pull_requests": 18,
+        "external_contributions": 6
+      },
+      "radar_data": [
+        {
+          "subject": "Languages",
+          "claimed": 95,
+          "proven": 90,
+          "fullMark": 100
+        },
+        {
+          "subject": "Frameworks\n& Libs",
+          "claimed": 90,
+          "proven": 85,
+          "fullMark": 100
+        },
+        {
+          "subject": "Databases\n& Storage",
+          "claimed": 85,
+          "proven": 80,
+          "fullMark": 100
+        },
+        {
+          "subject": "Cloud\n& DevOps",
+          "claimed": 80,
+          "proven": 45,
+          "fullMark": 100
+        },
+        {
+          "subject": "Testing\n& QA",
+          "claimed": 75,
+          "proven": 70,
+          "fullMark": 100
+        },
+        {
+          "subject": "Architecture\n& APIs",
+          "claimed": 85,
+          "proven": 65,
+          "fullMark": 100
+        }
+      ],
+      "activity_timeline": [
+        {
+          "period": "May",
+          "commits": 34,
+          "verifiedRepos": 4
+        },
+        {
+          "period": "Jun",
+          "commits": 48,
+          "verifiedRepos": 5
+        },
+        {
+          "period": "Jul",
+          "commits": 52,
+          "verifiedRepos": 6
+        },
+        {
+          "period": "Aug",
+          "commits": 61,
+          "verifiedRepos": 7
+        },
+        {
+          "period": "Sep",
+          "commits": 64,
+          "verifiedRepos": 8
+        }
+      ],
+      "skills": [
+        {
+          "id": "skill-python",
+          "name": "Python",
+          "category": "Languages",
+          "status": "PROVEN",
+          "confidence_score": 96,
+          "evidence": [
+            {
+              "repo_name": "async-task-engine",
+              "repo_url": "https://github.com/alexrivera-dev/async-task-engine",
+              "file_path": null,
+              "commit_date": "3 days ago",
+              "recency_days": 3,
+              "tests_detected": true,
+              "test_framework": "Pytest",
+              "deployment_detected": true,
+              "deployment_target": "Docker + GitHub Actions",
+              "has_readme": true,
+              "summary": "Core maintainer. 84 commits, 94% test coverage via pytest, poetry packaging, async queue pipeline."
+            },
+            {
+              "repo_name": "fastapi-starter-kit",
+              "repo_url": "https://github.com/alexrivera-dev/fastapi-starter-kit",
+              "file_path": null,
+              "commit_date": "2 weeks ago",
+              "recency_days": 14,
+              "tests_detected": true,
+              "test_framework": "Pytest",
+              "deployment_detected": true,
+              "deployment_target": "Render",
+              "has_readme": true,
+              "summary": "Production boilerplate with JWT authentication, Alembic migrations, and automated linting."
+            }
+          ],
+          "evidence_strength": "High",
+          "claimed_context": "Engineered high-throughput background processing workers using Python 3.11 and asyncio.",
+          "last_used": "3 days ago"
+        },
+        {
+          "id": "skill-fastapi",
+          "name": "FastAPI",
+          "category": "Frameworks & Libraries",
+          "status": "PROVEN",
+          "confidence_score": 94,
+          "evidence": [
+            {
+              "repo_name": "async-task-engine",
+              "repo_url": "https://github.com/alexrivera-dev/async-task-engine",
+              "file_path": null,
+              "commit_date": "3 days ago",
+              "recency_days": 3,
+              "tests_detected": true,
+              "test_framework": "Pytest",
+              "deployment_detected": true,
+              "deployment_target": "Docker",
+              "has_readme": true,
+              "summary": "Implements OpenAPI schemas, dependency injection, and streaming response endpoints."
+            }
+          ],
+          "evidence_strength": "High",
+          "claimed_context": "Architected 12+ RESTful microservices in FastAPI serving 500k requests/month.",
+          "last_used": "3 days ago"
+        },
+        {
+          "id": "skill-react",
+          "name": "React",
+          "category": "Frameworks & Libraries",
+          "status": "PROVEN",
+          "confidence_score": 91,
+          "evidence": [
+            {
+              "repo_name": "realtime-metrics-dashboard",
+              "repo_url": "https://github.com/alexrivera-dev/realtime-metrics-dashboard",
+              "file_path": null,
+              "commit_date": "1 week ago",
+              "recency_days": 7,
+              "tests_detected": true,
+              "test_framework": "Vitest",
+              "deployment_detected": true,
+              "deployment_target": "Vercel",
+              "has_readme": true,
+              "summary": "Modern React 18 frontend with custom hooks, WebSockets state management, and Tailwind CSS."
+            }
+          ],
+          "evidence_strength": "High",
+          "claimed_context": "Developed real-time administrative dashboards in React with interactive charts.",
+          "last_used": "7 days ago"
+        },
+        {
+          "id": "skill-postgresql",
+          "name": "PostgreSQL",
+          "category": "Databases & Storage",
+          "status": "PROVEN",
+          "confidence_score": 89,
+          "evidence": [
+            {
+              "repo_name": "fastapi-starter-kit",
+              "repo_url": "https://github.com/alexrivera-dev/fastapi-starter-kit",
+              "file_path": null,
+              "commit_date": "2 weeks ago",
+              "recency_days": 14,
+              "tests_detected": true,
+              "test_framework": "Pytest",
+              "deployment_detected": true,
+              "deployment_target": "Render",
+              "has_readme": true,
+              "summary": "PostgreSQL connection pooling via asyncpg, Alembic schema migrations, and relational indexing."
+            }
+          ],
+          "evidence_strength": "High",
+          "claimed_context": "Designed relational PostgreSQL schemas with complex CTEs, indexing, and connection pooling.",
+          "last_used": "14 days ago"
+        },
+        {
+          "id": "skill-docker",
+          "name": "Docker",
+          "category": "Cloud & DevOps",
+          "status": "PROVEN",
+          "confidence_score": 88,
+          "evidence": [
+            {
+              "repo_name": "async-task-engine",
+              "repo_url": "https://github.com/alexrivera-dev/async-task-engine",
+              "file_path": null,
+              "commit_date": "3 days ago",
+              "recency_days": 3,
+              "tests_detected": true,
+              "test_framework": null,
+              "deployment_detected": true,
+              "deployment_target": "Docker Compose",
+              "has_readme": true,
+              "summary": "Multi-stage production Dockerfile (<120MB) and docker-compose.yml orchestrating 3 services."
+            }
+          ],
+          "evidence_strength": "High",
+          "claimed_context": "Containerized microservices into optimized Docker images with automated CI/CD builds.",
+          "last_used": "3 days ago"
+        },
+        {
+          "id": "skill-pytest",
+          "name": "Pytest",
+          "category": "Testing & QA",
+          "status": "PROVEN",
+          "confidence_score": 92,
+          "evidence": [
+            {
+              "repo_name": "async-task-engine",
+              "repo_url": "https://github.com/alexrivera-dev/async-task-engine",
+              "file_path": null,
+              "commit_date": "3 days ago",
+              "recency_days": 3,
+              "tests_detected": true,
+              "test_framework": "Pytest",
+              "deployment_detected": true,
+              "deployment_target": null,
+              "has_readme": true,
+              "summary": "42 unit & integration tests, parametrized fixtures, respx mock HTTP calls, 94% coverage."
+            }
+          ],
+          "evidence_strength": "High",
+          "claimed_context": "Instituted test-driven development (TDD) resulting in 90%+ code test coverage across repositories.",
+          "last_used": "3 days ago"
+        },
+        {
+          "id": "skill-tailwind",
+          "name": "Tailwind CSS",
+          "category": "Frameworks & Libraries",
+          "status": "PROVEN",
+          "confidence_score": 89,
+          "evidence": [
+            {
+              "repo_name": "realtime-metrics-dashboard",
+              "repo_url": "https://github.com/alexrivera-dev/realtime-metrics-dashboard",
+              "file_path": null,
+              "commit_date": "1 week ago",
+              "recency_days": 7,
+              "tests_detected": false,
+              "test_framework": null,
+              "deployment_detected": true,
+              "deployment_target": "Vercel",
+              "has_readme": true,
+              "summary": "Used extensively with custom design tokens, dark mode variants, and responsive layouts."
+            }
+          ],
+          "evidence_strength": "High",
+          "claimed_context": "Crafted fully responsive user interfaces using Tailwind CSS design tokens.",
+          "last_used": "7 days ago"
+        },
+        {
+          "id": "skill-redis",
+          "name": "Redis",
+          "category": "Databases & Storage",
+          "status": "PARTIAL",
+          "confidence_score": 58,
+          "evidence": [
+            {
+              "repo_name": "async-task-engine",
+              "repo_url": "https://github.com/alexrivera-dev/async-task-engine",
+              "file_path": null,
+              "commit_date": "3 months ago",
+              "recency_days": 92,
+              "tests_detected": false,
+              "test_framework": null,
+              "deployment_detected": false,
+              "deployment_target": null,
+              "has_readme": true,
+              "summary": "Referenced as cache broker in configuration, but lacks dedicated unit tests or complex data structures."
+            }
+          ],
+          "evidence_strength": "Moderate",
+          "claimed_context": "Accelerated API response latency by 60% with Redis key-value caching.",
+          "last_used": "92 days ago"
+        },
+        {
+          "id": "skill-typescript",
+          "name": "TypeScript",
+          "category": "Languages",
+          "status": "PARTIAL",
+          "confidence_score": 62,
+          "evidence": [
+            {
+              "repo_name": "realtime-metrics-dashboard",
+              "repo_url": "https://github.com/alexrivera-dev/realtime-metrics-dashboard",
+              "file_path": null,
+              "commit_date": "1 week ago",
+              "recency_days": 7,
+              "tests_detected": false,
+              "test_framework": null,
+              "deployment_detected": true,
+              "deployment_target": null,
+              "has_readme": true,
+              "summary": "Used in React frontend, but contains several 'any' casts and disabled strict null checks."
+            }
+          ],
+          "evidence_strength": "Moderate",
+          "claimed_context": "Built type-safe web applications using TypeScript interfaces and generics.",
+          "last_used": "7 days ago"
+        },
+        {
+          "id": "skill-kubernetes",
+          "name": "Kubernetes",
+          "category": "Cloud & DevOps",
+          "status": "CLAIMED_ONLY",
+          "confidence_score": 10,
+          "evidence": [],
+          "evidence_strength": "None",
+          "claimed_context": "Managed Kubernetes clusters and Helm charts in staging environments.",
+          "last_used": "No repository record"
+        },
+        {
+          "id": "skill-aws",
+          "name": "AWS",
+          "category": "Cloud & DevOps",
+          "status": "CLAIMED_ONLY",
+          "confidence_score": 15,
+          "evidence": [],
+          "evidence_strength": "None",
+          "claimed_context": "Deployed serverless microservices across AWS ECS, S3, and CloudFront.",
+          "last_used": "No repository record"
+        },
+        {
+          "id": "skill-graphql",
+          "name": "GraphQL",
+          "category": "Architecture & APIs",
+          "status": "CLAIMED_ONLY",
+          "confidence_score": 12,
+          "evidence": [],
+          "evidence_strength": "None",
+          "claimed_context": "Designed and consumed unified GraphQL schemas using Apollo Client.",
+          "last_used": "No repository record"
+        }
+      ],
+      "document_name": null,
+      "extracted_text_preview": null,
+      "created_at": "2026-10-01"
+    },
+    {
+      "id": "cand-elena-rostova",
+      "name": "Elena Rostova",
+      "email": "elena.rostova@ai-labs.org",
+      "github_username": "elena-ai-labs",
+      "avatar_url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80",
+      "title": "AI/ML Platform Engineer",
+      "bio": "Building LLM inference engines, fine-tuning pipelines, and RAG architectures with PyTorch, FastAPI, and Groq.",
+      "overall_proof_score": 91,
+      "proof_xp": 450,
+      "total_skills": 10,
+      "proven_count": 7,
+      "partial_count": 1,
+      "claimed_only_count": 2,
+      "github_stats": {
+        "public_repos": 34,
+        "total_stars": 385,
+        "followers": 210,
+        "account_created": "2020-08-19",
+        "recent_commits_30d": 88,
+        "top_languages": [
+          {
+            "name": "Python",
+            "count": 22
+          },
+          {
+            "name": "C++",
+            "count": 6
+          },
+          {
+            "name": "CUDA",
+            "count": 4
+          },
+          {
+            "name": "Jupyter",
+            "count": 2
+          }
+        ],
+        "total_pull_requests": 32,
+        "external_contributions": 12
+      },
+      "radar_data": [
+        {
+          "subject": "Languages",
+          "claimed": 95,
+          "proven": 95,
+          "fullMark": 100
+        },
+        {
+          "subject": "Frameworks\n& Libs",
+          "claimed": 100,
+          "proven": 95,
+          "fullMark": 100
+        },
+        {
+          "subject": "Databases\n& Storage",
+          "claimed": 75,
+          "proven": 60,
+          "fullMark": 100
+        },
+        {
+          "subject": "Cloud\n& DevOps",
+          "claimed": 80,
+          "proven": 50,
+          "fullMark": 100
+        },
+        {
+          "subject": "Testing\n& QA",
+          "claimed": 80,
+          "proven": 85,
+          "fullMark": 100
+        },
+        {
+          "subject": "Architecture\n& APIs",
+          "claimed": 90,
+          "proven": 85,
+          "fullMark": 100
+        }
+      ],
+      "activity_timeline": [
+        {
+          "period": "May",
+          "commits": 54,
+          "verifiedRepos": 5
+        },
+        {
+          "period": "Jun",
+          "commits": 68,
+          "verifiedRepos": 6
+        },
+        {
+          "period": "Jul",
+          "commits": 72,
+          "verifiedRepos": 7
+        },
+        {
+          "period": "Aug",
+          "commits": 81,
+          "verifiedRepos": 8
+        },
+        {
+          "period": "Sep",
+          "commits": 88,
+          "verifiedRepos": 9
+        }
+      ],
+      "skills": [
+        {
+          "id": "skill-python-elena",
+          "name": "Python",
+          "category": "Languages",
+          "status": "PROVEN",
+          "confidence_score": 99,
+          "evidence": [
+            {
+              "repo_name": "groq-rag-accelerator",
+              "repo_url": "https://github.com/elena-ai-labs/groq-rag-accelerator",
+              "file_path": null,
+              "commit_date": "Yesterday",
+              "recency_days": 1,
+              "tests_detected": true,
+              "test_framework": "Pytest",
+              "deployment_detected": true,
+              "deployment_target": "HuggingFace Spaces + Docker",
+              "has_readme": true,
+              "summary": "Ultra-fast RAG pipeline with Groq API llama-3 inference, semantic chunking, and benchmark suites."
+            }
+          ],
+          "evidence_strength": "High",
+          "claimed_context": "Core author of low-latency Python machine learning inference systems.",
+          "last_used": "Yesterday"
+        },
+        {
+          "id": "skill-pytorch",
+          "name": "PyTorch",
+          "category": "Frameworks & Libraries",
+          "status": "PROVEN",
+          "confidence_score": 97,
+          "evidence": [
+            {
+              "repo_name": "custom-transformer-quantizer",
+              "repo_url": "https://github.com/elena-ai-labs/custom-transformer-quantizer",
+              "file_path": null,
+              "commit_date": "4 days ago",
+              "recency_days": 4,
+              "tests_detected": true,
+              "test_framework": "Pytest",
+              "deployment_detected": false,
+              "deployment_target": null,
+              "has_readme": true,
+              "summary": "PyTorch 4-bit and 8-bit weight quantization layer with custom autograd functions."
+            }
+          ],
+          "evidence_strength": "High",
+          "claimed_context": "Trained and quantized transformer architectures using PyTorch and CUDA kernels.",
+          "last_used": "4 days ago"
+        },
+        {
+          "id": "skill-fastapi-elena",
+          "name": "FastAPI",
+          "category": "Frameworks & Libraries",
+          "status": "PROVEN",
+          "confidence_score": 92,
+          "evidence": [
+            {
+              "repo_name": "groq-rag-accelerator",
+              "repo_url": "https://github.com/elena-ai-labs/groq-rag-accelerator",
+              "file_path": null,
+              "commit_date": "Yesterday",
+              "recency_days": 1,
+              "tests_detected": true,
+              "test_framework": "Pytest",
+              "deployment_detected": true,
+              "deployment_target": null,
+              "has_readme": true,
+              "summary": "Streaming Server-Sent Events (SSE) completion endpoints powered by FastAPI."
+            }
+          ],
+          "evidence_strength": "High",
+          "claimed_context": "Built high-throughput model serving APIs with FastAPI and asynchronous workers.",
+          "last_used": "Yesterday"
+        },
+        {
+          "id": "skill-docker-elena",
+          "name": "Docker",
+          "category": "Cloud & DevOps",
+          "status": "PARTIAL",
+          "confidence_score": 60,
+          "evidence": [
+            {
+              "repo_name": "groq-rag-accelerator",
+              "repo_url": "https://github.com/elena-ai-labs/groq-rag-accelerator",
+              "file_path": null,
+              "commit_date": "2 months ago",
+              "recency_days": 60,
+              "tests_detected": false,
+              "test_framework": null,
+              "deployment_detected": true,
+              "deployment_target": null,
+              "has_readme": true,
+              "summary": "Single generic Dockerfile used for HuggingFace container run."
+            }
+          ],
+          "evidence_strength": "Moderate",
+          "claimed_context": "Orchestrated containerized model training workflows.",
+          "last_used": "60 days ago"
+        },
+        {
+          "id": "skill-k8s-elena",
+          "name": "Kubernetes",
+          "category": "Cloud & DevOps",
+          "status": "CLAIMED_ONLY",
+          "confidence_score": 10,
+          "evidence": [],
+          "evidence_strength": "None",
+          "claimed_context": "Automated GPU node scaling with Kubernetes KEDA.",
+          "last_used": "No repository record"
+        }
+      ],
+      "document_name": null,
+      "extracted_text_preview": null,
+      "created_at": "2026-10-01"
+    }
+  ],
+  "jds": [
+    {
+      "id": "jd-fullstack",
+      "title": "Senior Full-Stack Engineer \u2014 Platform Core",
+      "company": "Vercel / NextGen Cloud",
+      "text": "We are seeking a Senior Full-Stack Platform Engineer to build high-scale developer workflows.\n\nRequirements:\n- Strong proficiency in Python, FastAPI, and asynchronous backend architectures.\n- Production experience with React, TypeScript, and modern styling (Tailwind CSS).\n- Deep experience with relational databases (PostgreSQL) and caching layers (Redis).\n- Hands-on experience with containerization (Docker) and automated CI/CD deployment pipelines.\n- Knowledge of automated testing (Pytest, Vitest, Jest) with mandatory test coverage standards.\n- Bonus: Kubernetes, AWS infrastructure, and GraphQL API federation.\n"
+    },
+    {
+      "id": "jd-ai-infra",
+      "title": "AI Infrastructure & Applications Engineer",
+      "company": "Groq Labs & HyperScale",
+      "text": "Join our AI Core team to build next-generation LLM applications and inference pipelines.\n\nKey Responsibilities & Qualifications:\n- Expert-level Python mastery, with experience in PyTorch and tensor operations.\n- Production experience building high-throughput streaming APIs with FastAPI.\n- Experience integrating LLMs (Groq API, Llama, OpenAI) and Vector Databases.\n- Familiarity with Docker containerization and Linux systems programming.\n- Understanding of distributed rate limiting, Redis caching, and unit testing with Pytest.\n"
+    }
+  ]
+}

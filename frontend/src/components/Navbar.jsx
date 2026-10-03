@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { ShieldCheck, ArrowUpRight, Sparkles, Terminal, Briefcase, Award } from 'lucide-react';
+import logo from './skillproof-logo.png';
 
 export default function Navbar({ activeTab, setActiveTab, viewMode, setViewMode, onOpenAudit, backendOnline }) {
   return (
@@ -7,10 +9,18 @@ export default function Navbar({ activeTab, setActiveTab, viewMode, setViewMode,
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
 
         {/* Brand Logo */}
-        <div className="flex items-center gap-3 cursor-pointer" onClick={() => setActiveTab('explore')}>
-          <div className="w-10 h-10 rounded-2xl bg-black text-[#d4ff3a] flex items-center justify-center font-black text-xl shadow-md border border-neutral-800">
-            SP
+        <div
+          className="flex items-center gap-3 cursor-pointer"
+          onClick={() => setActiveTab('explore')}
+        >
+          <div className="w-10 h-10 flex items-center justify-center">
+            <img
+              src={logo}
+              alt="SkillProof Logo"
+              className="w-full h-full object-contain"
+            />
           </div>
+
           <div>
             <div className="flex items-center gap-2">
               <span className="font-extrabold text-xl tracking-tight text-neutral-900">SkillProof</span>
@@ -22,7 +32,9 @@ export default function Navbar({ activeTab, setActiveTab, viewMode, setViewMode,
                 {backendOnline ? 'LIVE ASSESSMENT' : 'LIVE ASSESSMENT'}
               </span>
             </div>
-            <p className="text-[11px] text-neutral-500 font-medium hidden sm:block">Code-Verified Engineering Intelligence</p>
+            <p className="text-[11px] text-neutral-500 font-medium hidden sm:block">
+              Code-Verified Engineering Intelligence
+            </p>
           </div>
         </div>
 
@@ -37,6 +49,7 @@ export default function Navbar({ activeTab, setActiveTab, viewMode, setViewMode,
           >
             Proof Overview
           </button>
+
           <button
             onClick={() => setActiveTab('verify')}
             className={`px-4 py-2 rounded-full text-xs font-semibold transition-all flex items-center gap-1.5 ${activeTab === 'verify'
@@ -47,6 +60,7 @@ export default function Navbar({ activeTab, setActiveTab, viewMode, setViewMode,
             <Sparkles className="w-3.5 h-3.5 text-[#d4ff3a]" />
             Verify Résumé
           </button>
+
           <button
             onClick={() => setActiveTab('matrix')}
             className={`px-4 py-2 rounded-full text-xs font-semibold transition-all ${activeTab === 'matrix'
@@ -56,6 +70,7 @@ export default function Navbar({ activeTab, setActiveTab, viewMode, setViewMode,
           >
             Evidence Matrix
           </button>
+
           <button
             onClick={() => setActiveTab('matcher')}
             className={`px-4 py-2 rounded-full text-xs font-semibold transition-all flex items-center gap-1.5 ${activeTab === 'matcher'
@@ -66,6 +81,7 @@ export default function Navbar({ activeTab, setActiveTab, viewMode, setViewMode,
             <Briefcase className="w-3.5 h-3.5" />
             Job Matcher & Gaps
           </button>
+
           <button
             onClick={() => setActiveTab('microtasks')}
             className={`px-4 py-2 rounded-full text-xs font-semibold transition-all flex items-center gap-1.5 ${activeTab === 'microtasks'
@@ -79,8 +95,6 @@ export default function Navbar({ activeTab, setActiveTab, viewMode, setViewMode,
         </nav>
 
         {/* Right Action Buttons */}
-
-
       </div>
     </header>
   );
